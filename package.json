@@ -1,0 +1,14 @@
+{
+  "name": "typescript-bank",
+  "version": "1.0.0",
+  "description": "Projeto de um banco digital desenvolvido em TypeScript utilizando Programação Orientada a Objetos (POO). O sistema permite a criação de contas bancárias, depósitos, saques e transferências, garantindo segurança e organização através de classes e encapsulamento. O projeto busca aplicar conceitos sólidos de POO, como herança e polimorfismo, proporcionando um código modular e escalável.",
+  "main": "./dist/js/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "tsc -w",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
