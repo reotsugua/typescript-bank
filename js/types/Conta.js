@@ -1,5 +1,5 @@
 import { TipoTransacao } from "./TipoTransacao.js";
-let saldo = JSON.parse(localStorage.getItem("saldo") || "") || 0;
+let saldo = JSON.parse(localStorage.getItem("saldo") || "0") || 0;
 const transacoes = JSON.parse(localStorage.getItem("transacoes") || "[]", (key, value) => {
     if (key === "data") {
         return new Date(value);
@@ -44,7 +44,7 @@ const Conta = {
                     transacoes: []
                 });
             }
-            gruposTransacoes.at(-1)?.transacoes.push(transacao);
+            gruposTransacoes?.at(-1)?.transacoes.push(transacao);
         }
         return gruposTransacoes;
     },
