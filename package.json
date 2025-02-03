@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "tsc -w",
-    "deploy": "gh-pages -d build"
+    "deploy": "npx gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
